@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 
 export default class App extends React.Component {
   render() {
-    imNotDefined;
+    // imNotDefined;
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Nice work!</Text>
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: "center",
-    margin: 10,
-    imNotAProperty: 42
+    margin: 10
+    // imNotAProperty: 42
   },
   image: {
     height: 100,
