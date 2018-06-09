@@ -12,7 +12,6 @@ npm start
  › Press r to restart packager, or R to restart packager and clear cache.
  › Press d to toggle development mode. (current mode: development)
 
-11:12:27: Warning: You are using npm version 6.1.0. There may be bugs in this version, use it at your own risk. We recommend version 4.6.1.
 Building JavaScript bundle [==============================================] 56%
 ```
 ![Zero_to_Hero](../resources/Zero_to_Hero.png)

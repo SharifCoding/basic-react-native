@@ -4,7 +4,7 @@ Six challenges to get you started with React Native, [source](https://share.vige
 #### [Challenge 2: Simulator Orientation](https://share.viget.com/sxsw/learning-react-native/lessons/2-simulator-orientation/index.html)
 The goal of this challenge it to become comfortable with light debugging and the basic React Native dev tools. You’ll debug some errors, and then spend some time poking around the dev tools.
 
-![Zero_to_Hero](../resources/Simulator_Orientation_Broken.png)
+![Simulator Orientation Broken](../resources/Simulator_Orientation_Broken.png)
 
 <b>Use the Safari Web Inspector to debug the page in iOS Simulator</b>
 1. In the Safari on your Mac, on the Safari menu bar, choose the "Develop" menu.
@@ -12,9 +12,9 @@ The goal of this challenge it to become comfortable with light debugging and the
 3. Select the page for debugging.
 4. Preview on Simulator
 
-![Zero_to_Hero](../resources/Simulator_Orientation_Debug.png)
+![Simulator Orientation Debug](../resources/Simulator_Orientation_Debug.png)
 
-![Zero_to_Hero](../resources/Simulator_Orientation_Final.png)
+![Simulator Orientation Final](../resources/Simulator_Orientation_Final.png)
 
 #### [Challenge 3: Straight Styling](./Straight_Styling.md)
 

@@ -1,46 +1,70 @@
-import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { Image, StyleSheet, Text, View } from 'react-native';
+
+// <View> is analogous to HTML’s <div>
+// <Text> is analogous to <p>
+// <Image> is analogous to <img>
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Next challenge!</Text>
-        <Text style={styles.instructions}>
-          Try to build a replica of the screen{"\n"}
-          shown in the challenge directions.
-        </Text>
-        <Text style={styles.instructions}>(The one below.)</Text>
+        <Text style={styles.welcome}>Try this:</Text>
         <Image
-          style={styles.targetImage}
-          source={{
-            uri: "https://monosnap.com/file/PRQic7aie4TUrLxdgK6ydqm8xWTEAw.png"
-          }}
+          style={styles.image}
+          source={{uri: 'https://media.giphy.com/media/N04Fkkzhf9slO/giphy.gif'}}
         />
+        <View style={styles.textContainer}>
+          <Text style={styles.nestedText}>
+            I'm on the <Text style={styles.blueText}>left</Text>.
+          </Text>
+          <Text style={styles.nestedText}>
+            I'm on the <Text style={styles.orangeText}>right</Text>.
+          </Text>
+        </View>
       </View>
     );
   }
 }
 
+// https://facebook.github.io/react-native/docs/style.html
 const styles = StyleSheet.create({
+  // https://facebook.github.io/react-native/docs/flexbox.html
   container: {
     flex: 1,
-    backgroundColor: "#eee",
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: '#FFD90F', // Simpsons yellow CSS code
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   welcome: {
     fontSize: 20,
-    textAlign: "center",
-    margin: 10
+    textAlign: 'center',
+    margin: 10,
+    color: '#000',
   },
-  instructions: {
-    marginTop: 10,
-    textAlign: "center"
+  textContainer: {
+    flexDirection: 'row',
   },
-  targetImage: {
+  nestedText: {
+    color: '#000',
+    padding: 25,
+  },
+  // https://facebook.github.io/react-native/docs/height-and-width.html
+  image: {
+    height: 200,
+    margin: 25,
     width: 200,
-    height: 400,
-    marginTop: 25
-  }
+    borderWidth: 5,
+    borderColor: '#222',
+    borderRadius: 100,
+  },
+  // https://facebook.github.io/react-native/docs/text-style-props.html
+  blueText: {
+    fontWeight: '900',
+    color: '#2095b7',
+  },
+  orangeText: {
+    fontWeight: '900',
+    color: '#ef6c2e',
+  },
 });
